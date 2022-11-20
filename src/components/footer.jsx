@@ -1,4 +1,5 @@
 import React from "react";
+import config from "../config";
 
 /**
  * The footer component.
@@ -10,11 +11,14 @@ import React from "react";
 export default function Footer() {
 	const date = new Date();
 	return (
-		<div className="absolute inset-x-0 bottom-0 flex justify-between px-6 pb-5 font-serif text-center gap-7 opacity-80 text-slate-500">
-			<a href="https://rainnny.club">rainnny.club ©️ {date.getFullYear()}</a>
-			<a href="https://github.com/Rainnny7/personal-website">
-				Made with ❤️ by Rainnny
-			</a>
-		</div>
+		<footer className="flex justify-between px-6 pb-5 mt-10 font-serif text-center gap-7 opacity-80 text-slate-500">
+			{config.footer.map((footer, index) => {
+				return (
+					<a key={index} href={footer.link}>
+						{footer.text.replace("$year", date.getFullYear())}
+					</a>
+				);
+			})}
+		</footer>
 	);
 }

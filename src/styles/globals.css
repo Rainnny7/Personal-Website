@@ -10,3 +10,11 @@ body {
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	background: #010100;
 }
+
+code {
+	background: rgb(29 78 216 / 0.1);
+	color: #504d9e;
+	border-radius: 20px;
+	font-size: 0.875rem;
+	padding: 3px 7px;
+}

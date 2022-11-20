@@ -4,6 +4,7 @@ import axios from "axios";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
+import config from "../config";
 import Card from "./card";
 
 export default function Discord() {
@@ -11,7 +12,7 @@ export default function Discord() {
 	const [dcdn, setDCDN] = useState();
 	const [loading, setLoading] = useState(true);
 	useEffect(() => {
-		const id = "504147739131641857"; // The Discord ID of the user to fetch
+		const id = config.discord_id;
 
 		// Lanyard
 		axios.get(`https://api.lanyard.rest/v1/users/${id}`).then((response) => {

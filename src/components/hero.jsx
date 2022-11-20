@@ -1,9 +1,10 @@
 "use client";
 
-import { ComputerDesktopIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Typewriter from "typewriter-effect";
+import config from "../config";
 
 /**
  * The top hero section.
@@ -13,7 +14,7 @@ export default function Hero() {
 	return (
 		<div className="flex flex-col gap-3 px-6 text-center">
 			{/* Name */}
-			<a className="text-4xl font-bold text-slate-300">Braydon Rainnny</a>
+			<a className="text-4xl font-bold text-slate-300">{config.hero.header}</a>
 
 			{/* Typewriter */}
 			<a className="flex flex-wrap justify-center font-serif text-xl text-center text-slate-400 md:text-3xl">
@@ -23,7 +24,7 @@ export default function Hero() {
 						typewriter.pauseFor(2500).deleteAll().start();
 					}}
 					options={{
-						strings: ["Java Software Engineer", "System Administrator"],
+						strings: config.hero.text,
 						autoStart: true,
 						loop: true,
 						delay: 110,
@@ -33,13 +34,23 @@ export default function Hero() {
 
 			{/* Buttons */}
 			<div className="flex justify-center gap-4 mt-12">
-				{/* My Work */}
-				<Link href="#myWork">
-					<button className="flex gap-2 px-5 py-2 text-lg transition duration-300 ease-in-out delay-150 rounded-full text-slate-400 bg-slate-900 hover:-translate-y-1 hover:scale-100">
-						<ComputerDesktopIcon width={28} height={32} />
-						My Work
-					</button>
-				</Link>
+				{config.hero.buttons.map((button, index) => {
+					return (
+						<Link key={index} href={button.link}>
+							<button className="flex gap-2 px-5 py-2 text-lg transition duration-300 ease-in-out delay-150 rounded-full text-slate-400 bg-slate-900 hover:-translate-y-1 hover:scale-100">
+								<Image
+									src={button.icon}
+									alt={button.text + " Button"}
+									width={28}
+									height={28}
+									unoptimized
+								/>
+								<span>{button.text}</span>
+							</button>
+						</Link>
+					);
+				})}
+				;
 			</div>
 		</div>
 	);

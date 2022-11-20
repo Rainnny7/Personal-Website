@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import config from "../config";
+import ScaleUpHoverAnimation from "../util/animation/scaleUpHoverAnimation";
 
 /**
  * The navbar component.
@@ -31,13 +32,15 @@ export default function Navbar() {
 				{config.socials.map((social, index) => {
 					return (
 						<Link key={index} href={social.link}>
-							<Image
-								src={social.icon}
-								alt={social.name}
-								width={32}
-								height={32}
-								unoptimized
-							/>
+							<ScaleUpHoverAnimation>
+								<Image
+									src={social.icon}
+									alt={social.name}
+									width={32}
+									height={32}
+									unoptimized
+								/>
+							</ScaleUpHoverAnimation>
 						</Link>
 					);
 				})}

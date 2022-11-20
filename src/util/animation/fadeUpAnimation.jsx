@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 
 /**
- * @summary A fade up animation.
- * @description This children of this animation will slowly fade up and appear.
+ * A fade up animation.
+ * @description The children of this animation will slowly fade up and appear.
  * @param {*} children The children to animate.
  */
 export default function FadeUpAnimation({ children }) {

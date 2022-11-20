@@ -11,7 +11,7 @@ import React from "react";
  */
 export default function Navbar() {
 	return (
-		<div className="flex items-center border-b-2 justify-evenly h-14 border-slate-100/10">
+		<div className="flex items-center justify-between p-6 border-b-2 sm:justify-evenly h-14 border-slate-100/10">
 			{/* Title */}
 			<Link className="flex gap-2 text-lg font-bold text-slate-200" href={"/"}>
 				<Image
@@ -22,7 +22,7 @@ export default function Navbar() {
 					height={24}
 					unoptimized
 				/>
-				RainnnyCLUB
+				<span className="hidden sm:flex">RainnnyCLUB</span>
 			</Link>
 
 			{/* Socials */}

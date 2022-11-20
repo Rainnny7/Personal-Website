@@ -2,6 +2,7 @@
 
 import axios from "axios";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import config from "../config";
@@ -45,64 +46,66 @@ export default function Discord() {
 
 	return (
 		<div className="w-full max-w-[15rem] md:max-w-[20rem]">
-			<Card className="w-full h-full max-h-[19rem] mx-auto pb-3">
-				{/* Banner */}
-				{user?.banner ? (
-					<div className="md:h-full max-h-[6.3rem]">
-						<Image
-							className="rounded-xl"
-							src={`https://cdn.discordapp.com/banners/${user.id}/${user.banner}.jpg?size=600`}
-							alt="Discord Banner"
-							width={712}
-							height={712}
-							unoptimized
-						/>
+			<Link href={`https://discord.com/users/${config.discord_id}`}>
+				<Card className="w-full h-full max-h-[19rem] mx-auto pb-3 cursor-pointer">
+					{/* Banner */}
+					{user?.banner ? (
+						<div className="md:h-full max-h-[6.3rem]">
+							<Image
+								className="rounded-xl"
+								src={`https://cdn.discordapp.com/banners/${user.id}/${user.banner}.jpg?size=600`}
+								alt="Discord Banner"
+								width={712}
+								height={712}
+								unoptimized
+							/>
+						</div>
+					) : (
+						<div className="mt-10" />
+					)}
+
+					{/* Avatar */}
+					<div className="flex justify-center -mt-9 md:-mt-7">
+						{loading ? (
+							<Skeleton className="w-[5rem] h-[5rem]" circle />
+						) : (
+							<Image
+								className={`border-2 ${statusColor} rounded-full p-[0.15rem]`}
+								src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.jpg?size=600`}
+								alt="Discord Avatar"
+								width={74}
+								height={74}
+								unoptimized
+							/>
+						)}
 					</div>
-				) : (
-					<div className="mt-10" />
-				)}
 
-				{/* Avatar */}
-				<div className="flex justify-center -mt-9 md:-mt-7">
-					{loading ? (
-						<Skeleton className="w-[5rem] h-[5rem]" circle />
-					) : (
-						<Image
-							className={`border-2 ${statusColor} rounded-full p-[0.15rem]`}
-							src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.jpg?size=600`}
-							alt="Discord Avatar"
-							width={74}
-							height={74}
-							unoptimized
-						/>
-					)}
-				</div>
-
-				{/* Username & Bio */}
-				<div className="px-4 mt-4 font-bold text-white">
-					{loading ? (
-						<div className="flex flex-col gap-4">
-							<Skeleton className="w-24 h-5" />
-							<Skeleton className="w-full h-12" />
-						</div>
-					) : (
-						<div className="flex flex-col gap-4">
-							{/* Username */}
-							<a className="text-xl">
-								{user.username}
-								<span className="font-normal text-gray-300">
-									#{user.discriminator}
+					{/* Username & Bio */}
+					<div className="px-4 mt-4 font-bold text-white">
+						{loading ? (
+							<div className="flex flex-col gap-4">
+								<Skeleton className="w-24 h-5" />
+								<Skeleton className="w-full h-12" />
+							</div>
+						) : (
+							<div className="flex flex-col gap-4">
+								{/* Username */}
+								<span className="text-xl">
+									{user.username}
+									<span className="font-normal text-gray-300">
+										#{user.discriminator}
+									</span>
 								</span>
-							</a>
 
-							{/* Bio */}
-							{user.bio && (
-								<a className="font-thin text-gray-300 text-md">{user.bio}</a>
-							)}
-						</div>
-					)}
-				</div>
-			</Card>
+								{/* Bio */}
+								{user.bio && (
+									<p className="font-thin text-gray-300 text-md">{user.bio}</p>
+								)}
+							</div>
+						)}
+					</div>
+				</Card>
+			</Link>
 		</div>
 	);
 }

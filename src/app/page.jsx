@@ -3,6 +3,10 @@ import Hero from "../components/hero";
 import Intro from "../components/intro";
 import Work from "../components/work";
 
+/**
+ * The home page.
+ * @returns {JSX.Element} The home page.
+ */
 export default async function Home() {
 	return (
 		<div className="flex flex-col flex-wrap justify-center mt-48 sm:mt-56">

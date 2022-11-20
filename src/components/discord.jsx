@@ -8,6 +8,12 @@ import Skeleton from "react-loading-skeleton";
 import config from "../config";
 import Card from "./card";
 
+/**
+ * The Discord component.
+ * @description This component displays the Discord user information
+ * 				for the user defined in the config.
+ * @returns {JSX.Element} The Discord component.
+ */
 export default function Discord() {
 	const [lanyard, setLanyard] = useState();
 	const [dcdn, setDCDN] = useState();

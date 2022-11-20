@@ -3,9 +3,7 @@ import config from "../config";
 
 /**
  * The footer component.
- * <p>
  * This component is rendered onto all pages.
- * </p>
  * @returns {JSX.Element} The footer component.
  */
 export default function Footer() {

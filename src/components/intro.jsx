@@ -3,7 +3,12 @@ import React from "react";
 import config from "../config";
 import Card, { CardIcon } from "./card";
 
-function Intro() {
+/**
+ * The intro section.
+ * @description This component introduces myself to the user.
+ * @returns {JSX.Element} The intro section.
+ */
+export default function Intro() {
 	return (
 		<div className="w-full max-w-[37rem]">
 			<Card className="px-4 pb-3 mx-auto cursor-default">
@@ -40,5 +45,3 @@ function Intro() {
 		</div>
 	);
 }
-
-export default Intro;

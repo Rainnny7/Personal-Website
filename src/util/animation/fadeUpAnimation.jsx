@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 /**
  * A fade up animation.
  * @description The children of this animation will slowly fade up and appear.
- * @param {*} children The children to animate.
+ * @param {JSX.Element} children The children to animate.
  */
 export default function FadeUpAnimation({ children }) {
 	return (

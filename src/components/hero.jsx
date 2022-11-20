@@ -1,15 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Typewriter from "typewriter-effect";
 import config from "../config";
 import ScaleUpHoverAnimation from "../util/animation/scaleUpHoverAnimation";
 
 /**
- * The top hero section.
- * @returns {JSX.Element} The hero section.
+ * The top hero component.
+ * @description This component is displayed at the top of the page.
+ * @returns {JSX.Element} The hero component.
  */
 export default function Hero() {
 	return (

@@ -5,6 +5,10 @@ import FadeUpAnimation from "../util/animation/fadeUpAnimation";
 import "./globals.css";
 import { AppProvider } from "./provider";
 
+/**
+ * The root page layout.
+ * @returns {JSX.Element} The root page layout.
+ */
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" dir="auto">

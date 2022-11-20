@@ -2,7 +2,12 @@ import { BriefcaseIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import Card, { CardIcon } from "./card";
 
-function Work() {
+/**
+ * The work component.
+ * @description This component displays past and current work experience.
+ * @returns {JSX.Element} The job component.
+ */
+export default function Work() {
 	return (
 		<div id="work" className="w-full">
 			<Card className="px-4 pb-8 mx-auto cursor-default">
@@ -19,5 +24,3 @@ function Work() {
 		</div>
 	);
 }
-
-export default Work;

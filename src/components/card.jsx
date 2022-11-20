@@ -1,6 +1,11 @@
 import React from "react";
 import ScaleUpHoverAnimation from "../util/animation/scaleUpHoverAnimation";
 
+/**
+ * A styled card component.
+ * @param {*} props The props of the card.
+ * @returns {JSX.Element} The card component.
+ */
 export default function Card(props) {
 	return (
 		<ScaleUpHoverAnimation>
@@ -15,6 +20,11 @@ export default function Card(props) {
 	);
 }
 
+/**
+ * An icon for the card component.
+ * @param {*} props The props of the icon.
+ * @returns {JSX.Element} The icon component.
+ */
 export function CardIcon(props) {
 	return (
 		<div {...props}>

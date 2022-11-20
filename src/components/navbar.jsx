@@ -6,9 +6,7 @@ import ScaleUpHoverAnimation from "../util/animation/scaleUpHoverAnimation";
 
 /**
  * The navbar component.
- * <p>
  * This component is rendered onto all pages.
- * </p>
  * @returns {JSX.Element} The navbar component.
  */
 export default function Navbar() {

@@ -35,8 +35,8 @@ export default function Hero() {
 			<div className="flex justify-center gap-4 mt-12">
 				{/* My Work */}
 				<Link href="#myWork">
-					<button className="flex gap-1 px-5 py-2 text-lg transition duration-300 ease-in-out delay-150 rounded-full bg-slate-400 hover:-translate-y-1 hover:scale-95">
-						<ComputerDesktopIcon width={32} height={32} />
+					<button className="flex gap-2 px-5 py-2 text-lg transition duration-300 ease-in-out delay-150 rounded-full text-slate-400 bg-slate-900 hover:-translate-y-1 hover:scale-100">
+						<ComputerDesktopIcon width={28} height={32} />
 						My Work
 					</button>
 				</Link>

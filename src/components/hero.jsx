@@ -15,7 +15,7 @@ export default function Hero() {
 	return (
 		<div className="flex flex-col gap-3 px-6 text-center">
 			{/* Name */}
-			<a className="text-4xl font-bold text-slate-300">{config.hero.header}</a>
+			<a className="text-5xl font-bold text-slate-300">{config.hero.header}</a>
 
 			{/* Typewriter */}
 			<a className="flex flex-wrap justify-center text-xl text-center text-slate-400 md:text-3xl">

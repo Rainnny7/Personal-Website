@@ -105,7 +105,7 @@ export default function Discord() {
 
 								{/* Bio */}
 								{user.bio && (
-									<p className="font-thin text-gray-300 text-md">{user.bio}</p>
+									<p className="font-thin text-gray-300">{user.bio}</p>
 								)}
 							</div>
 						)}

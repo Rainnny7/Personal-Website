@@ -1,6 +1,12 @@
 import moment from "moment/moment";
 
 const config = {
+	seo: {
+		title: "RainnnyCLUB",
+		description: "My name is Braydon and I am a self-taught software engineer",
+		url: "https://rainnny.club",
+		image: "/logo.png",
+	},
 	navbar: {
 		logo: "/logo.png",
 		title: "RainnnyCLUB",

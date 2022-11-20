@@ -15,7 +15,7 @@ export default async function Home() {
 				<Discord />
 				<Intro />
 			</div>
-			<div className="w-full max-w-5xl mx-auto mt-72">
+			<div className="w-full max-w-5xl p-10 mx-auto mt-32 sm:mt-72">
 				<Work />
 			</div>
 		</div>

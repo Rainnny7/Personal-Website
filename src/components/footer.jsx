@@ -9,7 +9,7 @@ import config from "../config";
 export default function Footer() {
 	const date = new Date();
 	return (
-		<footer className="flex justify-between px-6 pb-5 mt-10 font-serif text-center gap-7 opacity-80 text-slate-500">
+		<footer className="flex justify-between px-6 pb-5 mt-20 text-center gap-7 opacity-80 text-slate-500">
 			{config.footer.map((footer, index) => {
 				return (
 					<a key={index} href={footer.link}>

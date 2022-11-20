@@ -37,7 +37,7 @@ export default function Hero() {
 			<div className="flex justify-center gap-4 mt-12">
 				{config.hero.buttons.map((button, index) => {
 					return (
-						<Link key={index} href={button.link}>
+						<a key={index} href={button.link}>
 							<ScaleUpHoverAnimation>
 								<button
 									className={`flex gap-2 px-5 py-2 text-lg rounded-full text-slate-400 ${
@@ -58,7 +58,7 @@ export default function Hero() {
 									<span>{button.text}</span>
 								</button>
 							</ScaleUpHoverAnimation>
-						</Link>
+						</a>
 					);
 				})}
 				;

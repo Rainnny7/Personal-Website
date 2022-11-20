@@ -4,7 +4,7 @@ import Card, { CardIcon } from "./card";
 
 function Work() {
 	return (
-		<div className="w-full">
+		<div id="work" className="w-full">
 			<Card className="px-4 pb-8 mx-auto cursor-default">
 				<CardIcon className="w-20 h-20 mx-auto">
 					<BriefcaseIcon className="text-white" width={72} height={72} />

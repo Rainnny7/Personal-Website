@@ -1,7 +1,7 @@
 import "react-loading-skeleton/dist/skeleton.css";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-import FadeUpAnimation from "../util/fadeUpAnimation";
+import FadeUpAnimation from "../util/animation/fadeUpAnimation";
 import "./globals.css";
 import { AppProvider } from "./provider";
 

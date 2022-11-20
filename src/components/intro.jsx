@@ -1,21 +1,22 @@
 import Image from "next/image";
 import React from "react";
 import config from "../config";
-import Card from "./card";
+import Card, { CardIcon } from "./card";
 
 function Intro() {
 	return (
 		<div className="w-full max-w-[37rem]">
 			<Card className="px-4 pb-3 mx-auto cursor-default">
-				{/* Waving Hand */}
-				<Image
-					className="mx-auto"
-					src="/hand-wave.png"
-					alt="Waving Hand"
-					width={84}
-					height={84}
-					unoptimized
-				/>
+				<CardIcon className="w-20 h-20 mx-auto">
+					<Image
+						className="mx-auto"
+						src="/hand-wave.png"
+						alt="Waving Hand"
+						width={72}
+						height={72}
+						unoptimized
+					/>
+				</CardIcon>
 
 				{/* Name & Bio */}
 				<div className="flex flex-col gap-4 mt-3">

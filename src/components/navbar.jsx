@@ -11,12 +11,9 @@ import React from "react";
  */
 export default function Navbar() {
 	return (
-		<div className="flex items-center border-b-2 justify-evenly h-11 border-slate-800">
+		<div className="flex items-center border-b-2 justify-evenly h-14 border-slate-100/10">
 			{/* Title */}
-			<Link
-				className="flex gap-2 text-base font-bold text-slate-200"
-				href={"/"}
-			>
+			<Link className="flex gap-2 text-lg font-bold text-slate-200" href={"/"}>
 				<Image
 					className="rounded-full"
 					src="/logo.png"

@@ -21,7 +21,7 @@ export default function Intro() {
 			gyroscope
 			tiltReverse
 		>
-			<div className="w-full max-w-[37rem]">
+			<div className="w-full">
 				<Card className="px-4 pb-3 mx-auto cursor-default">
 					{/* Icon */}
 					<CardIcon className="w-20 h-20 mx-auto my-7">
@@ -37,7 +37,7 @@ export default function Intro() {
 
 					{/* Name & Bio */}
 					<div className="flex flex-col gap-4 mt-3">
-						<h1 className="font-serif text-3xl font-bold text-white">
+						<h1 className="text-3xl font-bold text-white">
 							{config.intro.header}
 						</h1>
 						<div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-0 justify-evenly">

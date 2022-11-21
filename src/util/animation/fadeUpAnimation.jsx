@@ -17,7 +17,7 @@ export default function FadeUpAnimation(props) {
 				opacity: 0,
 				y: y,
 			}}
-			animate={{
+			whileInView={{
 				opacity: 1,
 				y: 0,
 				transition: {
@@ -26,6 +26,7 @@ export default function FadeUpAnimation(props) {
 					},
 				},
 			}}
+			viewport={{ once: true }}
 		>
 			{props.children}
 		</motion.div>

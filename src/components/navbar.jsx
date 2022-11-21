@@ -48,7 +48,7 @@ export default function Navbar() {
 										y: 0,
 										transition: {
 											y: {
-												duration: index * 0.5,
+												duration: index * 0.55,
 											},
 										},
 									}}

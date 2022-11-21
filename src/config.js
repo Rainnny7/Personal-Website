@@ -186,11 +186,7 @@ const config = {
 			link: "https://rainnny.club",
 		},
 		{
-			text: (
-				<span>
-					Made with <b className="animate-pulse">❤️</b> by Rainnny
-				</span>
-			),
+			text: <span>Made with ❤️ by Rainnny</span>,
 			link: "https://github.com/Rainnny7/personal-website",
 		},
 	],

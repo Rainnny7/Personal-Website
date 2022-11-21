@@ -10,9 +10,11 @@ import ReactTooltip from "react-tooltip";
  */
 export function AppProvider({ children }) {
 	return (
-		<SkeletonTheme baseColor="#202020" highlightColor="#444">
+		<>
 			<ReactTooltip />
-			{children}
-		</SkeletonTheme>
+			<SkeletonTheme baseColor="#202020" highlightColor="#444">
+				{children}
+			</SkeletonTheme>
+		</>
 	);
 }

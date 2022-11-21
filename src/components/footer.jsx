@@ -13,7 +13,7 @@ export default function Footer() {
 			{config.footer.map((footer, index) => {
 				return (
 					<a key={index} href={footer.link}>
-						{footer.text.replace("$year", date.getFullYear())}
+						{footer.text}
 					</a>
 				);
 			})}

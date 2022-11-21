@@ -182,11 +182,15 @@ const config = {
 	],
 	footer: [
 		{
-			text: "rainnny.club ©️ $year",
+			text: <span>rainnny.club ©️ {new Date().getFullYear()}</span>,
 			link: "https://rainnny.club",
 		},
 		{
-			text: "Made with ❤️ by Rainnny",
+			text: (
+				<span>
+					Made with <b className="animate-pulse">❤️</b> by Rainnny
+				</span>
+			),
 			link: "https://github.com/Rainnny7/personal-website",
 		},
 	],

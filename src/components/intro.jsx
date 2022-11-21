@@ -12,6 +12,7 @@ export default function Intro() {
 	return (
 		<div className="w-full max-w-[37rem]">
 			<Card className="px-4 pb-3 mx-auto cursor-default">
+				{/* Icon */}
 				<CardIcon className="w-20 h-20 mx-auto my-7">
 					<Image
 						className="mx-auto"

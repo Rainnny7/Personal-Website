@@ -31,6 +31,7 @@ export default function Skills() {
 								<Image
 									src={skill.icon}
 									alt={skill.name}
+									data-tip={skill.name}
 									width={54}
 									height={54}
 									unoptimized

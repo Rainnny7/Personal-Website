@@ -1,5 +1,9 @@
 import moment from "moment/moment";
 
+const now = moment(Date.now());
+const birthday = moment([2002, 10, 13]);
+const startedWork = moment([2016, 8, 1]);
+
 const config = {
 	seo: {
 		title: "RainnnyCLUB",
@@ -47,12 +51,15 @@ const config = {
 		bio: (
 			<>
 				A{" "}
-				<code>
-					{new Date().getFullYear() - moment([2002, 11, 13]).year()} year old
+				<code data-tip={now.diff(birthday, "years", true)}>
+					{now.diff(birthday, "years")} year old
 				</code>{" "}
 				passionate software engineer living in <b>Canada</b>, I primarily work
 				with the Java programming language and have{" "}
-				<code>{moment([2016, 9, 1]).fromNow(true)}</code> of experience.
+				<code data-tip={startedWork.format("MMMM Do YYYY")}>
+					{startedWork.fromNow(true)}
+				</code>{" "}
+				of experience.
 			</>
 		),
 		image: "/me.jpg",

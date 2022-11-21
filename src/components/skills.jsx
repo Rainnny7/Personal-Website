@@ -7,7 +7,7 @@ import Card, { CardIcon } from "./card";
 
 export default function Skills() {
 	return (
-		<div className="w-full">
+		<div id="skills" className="w-full">
 			<Card className="px-4 pb-8 mx-auto cursor-default">
 				{/* Icon */}
 				<CardIcon className="w-20 h-20 mx-auto my-7">

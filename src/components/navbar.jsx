@@ -13,7 +13,10 @@ export default function Navbar() {
 	return (
 		<nav className="sticky top-0 z-50 flex items-center justify-between p-6 border-b-2 backdrop-blur-md sm:justify-evenly h-14 border-slate-600/10">
 			{/* Title */}
-			<Link className="flex gap-2 text-lg font-bold text-slate-200" href={"/"}>
+			<Link
+				className="flex gap-2 text-lg font-bold transition ease-in-out delay-100 text-slate-200 hover:opacity-80"
+				href={"/"}
+			>
 				<Image
 					className="rounded-full"
 					src={config.navbar.logo}

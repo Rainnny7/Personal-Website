@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
  * @param {JSX.Element} children The children to animate.
  */
 export default function FadeUpAnimation(props) {
-	const y = props.y || 50;
+	const y = props.y || 20;
 	const duration = props.duration || 0.7;
 	return (
 		<motion.div
@@ -21,6 +21,9 @@ export default function FadeUpAnimation(props) {
 				opacity: 1,
 				y: 0,
 				transition: {
+					opacity: {
+						duration: 0.6,
+					},
 					y: {
 						duration: duration,
 					},

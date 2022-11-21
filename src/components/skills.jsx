@@ -21,7 +21,6 @@ export default function Skills() {
 
 				{/* Skills */}
 				<Card className="px-4 pb-8 mx-auto cursor-default">
-					{/* Skills */}
 					<div className="flex flex-wrap justify-center max-w-2xl gap-3 mt-7">
 						{config.skills.skills.map((skill, index) => {
 							return (

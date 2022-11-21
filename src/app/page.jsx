@@ -3,7 +3,6 @@ import Discord from "../components/discord";
 import Hero from "../components/hero";
 import Intro from "../components/intro";
 import Skills from "../components/skills";
-import Work from "../components/work";
 
 /**
  * The home page.
@@ -22,7 +21,7 @@ export default async function Home() {
 					</div>
 					<div className="flex flex-col w-full max-w-5xl p-10 mx-auto mt-48 gap-72">
 						<Skills />
-						<Work />
+						{/* <Work /> */}
 					</div>
 				</div>
 			</div>

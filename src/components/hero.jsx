@@ -19,7 +19,7 @@ export default function Hero() {
 
 			{/* Typewriter */}
 			<a className="flex flex-wrap justify-center text-xl text-center text-slate-400 md:text-3xl">
-				<span className="mr-2">I am a</span>
+				<span>I am a &#8203;</span>
 				<Typewriter
 					onInit={(typewriter) => {
 						typewriter.pauseFor(2500).deleteAll().start();

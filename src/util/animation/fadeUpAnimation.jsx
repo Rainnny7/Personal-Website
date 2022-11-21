@@ -20,7 +20,7 @@ export default function FadeUpAnimation({ children }) {
 				y: 0,
 				transition: {
 					y: {
-						duration: 0.7,
+						duration: 0.5,
 					},
 				},
 			}}

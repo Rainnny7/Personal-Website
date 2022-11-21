@@ -18,14 +18,14 @@ export default function Hero() {
 		<FadeUpAnimation y={70} animation={1.4}>
 			<div className="flex flex-col items-center justify-between h-screen gap-3 px-6 text-center -mt-14">
 				{/* Top */}
-				<div className="mt-[35vh] sm:mt-[40vh]">
+				<div className="flex flex-col gap-4 mt-[35vh] sm:mt-[40vh]">
 					{/* Name */}
-					<a className="text-5xl font-bold text-slate-300">
+					<a className="font-mono text-4xl font-bold sm:text-6xl text-slate-300">
 						{config.hero.header}
 					</a>
 
 					{/* Typewriter */}
-					<a className="flex flex-wrap justify-center text-xl text-center text-slate-400 md:text-3xl">
+					<a className="flex flex-wrap justify-center text-lg text-center text-slate-400 sm:text-3xl">
 						<span>I am a &#8203;</span>
 						<Typewriter
 							onInit={(typewriter) => {
@@ -47,10 +47,10 @@ export default function Hero() {
 								<a key={index} href={button.link}>
 									<ScaleUpHoverAnimation>
 										<button
-											className={`flex gap-2 px-5 py-2 text-lg rounded-full text-slate-400 ${
+											className={`flex gap-2 px-4 sm:px-7 py-2 sm:py-3 text-md sm:text-lg rounded-full text-slate-400 ${
 												button.primary
 													? "bg-slate-900"
-													: "h-11 border border-slate-700"
+													: "h-11 sm:h-[3.25rem] border border-slate-700"
 											}`}
 										>
 											{button.icon && (
@@ -72,9 +72,9 @@ export default function Hero() {
 				</div>
 
 				{/* Bouncing Arrow */}
-				<div className="mb-14 animate-bounce">
-					<ArrowSmallDownIcon width={32} fill="white" />
-				</div>
+				<a className="mb-20 cursor-pointer animate-bounce" href="#intro">
+					<ArrowSmallDownIcon className="text-slate-500/70" width={32} />
+				</a>
 			</div>
 		</FadeUpAnimation>
 	);

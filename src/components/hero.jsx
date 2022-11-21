@@ -15,7 +15,7 @@ import ScaleUpHoverAnimation from "../util/animation/scaleUpHoverAnimation";
 export default function Hero() {
 	return (
 		<FadeUpAnimation y={70} animation={1.4}>
-			<div className="flex flex-col gap-3 px-6 text-center">
+			<div className="flex flex-col items-center justify-center h-screen gap-3 px-6 text-center -mt-14">
 				{/* Name */}
 				<a className="text-5xl font-bold text-slate-300">
 					{config.hero.header}

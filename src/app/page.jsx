@@ -12,9 +12,9 @@ export default async function Home() {
 	return (
 		<>
 			<BackgroundPattern />
-			<div className="relative flex flex-col flex-wrap justify-center mt-48 sm:mt-56">
+			<div className="relative flex flex-col flex-wrap justify-center">
 				<Hero />
-				<div className="flex flex-col mt-48">
+				<div className="flex flex-col mt-20">
 					<div className="flex flex-col items-center gap-24 p-10 sm:gap-4 sm:items-start justify-evenly sm:flex-row">
 						<Discord />
 						<Intro />

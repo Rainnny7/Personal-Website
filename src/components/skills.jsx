@@ -11,10 +11,11 @@ export default function Skills() {
 			<div id="skills" className="w-full">
 				{/* Header */}
 				<div className="flex flex-col items-center text-center mb-7">
-					<h1 className="font-mono text-4xl font-bold text-white">Skills</h1>
+					<h1 className="font-mono text-4xl font-bold text-white">
+						{config.skills.header}
+					</h1>
 					<h3 className="max-w-md text-xl text-slate-300/60">
-						Here is a list of the skills I have aquired over my time as a
-						software engineer.
+						{config.skills.description}
 					</h3>
 				</div>
 
@@ -22,7 +23,7 @@ export default function Skills() {
 				<Card className="px-4 pb-8 mx-auto cursor-default">
 					{/* Skills */}
 					<div className="flex flex-wrap justify-center max-w-2xl gap-3 mt-7">
-						{config.skills.map((skill, index) => {
+						{config.skills.skills.map((skill, index) => {
 							return (
 								<Link key={index} href={skill.link}>
 									<Image

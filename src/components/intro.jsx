@@ -32,7 +32,7 @@ export default function Intro() {
 						<p className="max-w-md text-lg text-white/50">{config.intro.bio}</p>
 						<div className="relative w-24 h-24 rounded-full">
 							<Image
-								className="object-cover rounded-full opacity-90"
+								className="object-cover rounded-full shadow-md opacity-90 shadow-white/70"
 								src={config.intro.image}
 								alt="Picture of the site owner"
 								unoptimized

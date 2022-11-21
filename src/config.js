@@ -61,7 +61,7 @@ const config = {
 				</code>{" "}
 				passionate software engineer living in <b>Canada</b>, I primarily work
 				with the Java programming language and have{" "}
-				<code data-tip={startedWork.format("MMMM Do YYYY")}>
+				<code data-tip={"Since " + startedWork.format("MMMM Do YYYY")}>
 					{startedWork.fromNow(true)}
 				</code>{" "}
 				of experience.

@@ -11,7 +11,7 @@ import ScaleUpHoverAnimation from "../util/animation/scaleUpHoverAnimation";
  */
 export default function Navbar() {
 	return (
-		<nav className="sticky top-0 z-50 flex items-center justify-between p-6 border-b-2 backdrop-blur-sm sm:justify-evenly h-14 border-slate-100/10">
+		<nav className="sticky top-0 z-50 flex items-center justify-between p-6 border-b-2 backdrop-blur-md sm:justify-evenly h-14 border-slate-100/10">
 			{/* Title */}
 			<Link className="flex gap-2 text-lg font-bold text-slate-200" href={"/"}>
 				<Image

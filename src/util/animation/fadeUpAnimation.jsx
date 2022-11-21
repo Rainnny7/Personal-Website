@@ -7,25 +7,27 @@ import { motion } from "framer-motion";
  * @description The children of this animation will slowly fade up and appear.
  * @param {JSX.Element} children The children to animate.
  */
-export default function FadeUpAnimation({ children }) {
+export default function FadeUpAnimation(props) {
+	const y = props.y || 50;
+	const duration = props.duration || 0.7;
 	return (
 		<motion.div
 			key="modal"
 			initial={{
 				opacity: 0,
-				y: 50,
+				y: y,
 			}}
 			animate={{
 				opacity: 1,
 				y: 0,
 				transition: {
 					y: {
-						duration: 0.7,
+						duration: duration,
 					},
 				},
 			}}
 		>
-			{children}
+			{props.children}
 		</motion.div>
 	);
 }

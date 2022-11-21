@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -34,13 +37,30 @@ export default function Navbar() {
 					return (
 						<Link key={index} href={social.link}>
 							<ScaleUpHoverAnimation>
-								<Image
-									src={social.icon}
-									alt={social.name}
-									width={32}
-									height={32}
-									unoptimized
-								/>
+								<motion.div
+									key="modal"
+									initial={{
+										opacity: 0,
+										y: -30,
+									}}
+									animate={{
+										opacity: 1,
+										y: 0,
+										transition: {
+											y: {
+												duration: index * 0.5,
+											},
+										},
+									}}
+								>
+									<Image
+										src={social.icon}
+										alt={social.name}
+										width={32}
+										height={32}
+										unoptimized
+									/>
+								</motion.div>
 							</ScaleUpHoverAnimation>
 						</Link>
 					);

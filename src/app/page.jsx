@@ -12,7 +12,7 @@ export default async function Home() {
 	return (
 		<div className="relative flex flex-col flex-wrap justify-center">
 			<Hero />
-			<div className="flex flex-col mt-20">
+			<div id="intro" className="flex flex-col mt-24">
 				<FadeUpAnimation>
 					<div className="flex flex-col items-center gap-24 p-10 sm:gap-4 sm:items-start justify-evenly sm:flex-row">
 						<Discord />

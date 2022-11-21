@@ -35,24 +35,24 @@ export default function Navbar() {
 			<div className="flex gap-2">
 				{config.socials.map((social, index) => {
 					return (
-						<Link key={index} href={social.link}>
-							<ScaleUpHoverAnimation>
-								<motion.div
-									key="modal"
-									initial={{
-										opacity: 0,
-										y: -30,
-									}}
-									animate={{
-										opacity: 1,
-										y: 0,
-										transition: {
-											y: {
-												duration: index * 0.55,
-											},
-										},
-									}}
-								>
+						<motion.div
+							key={index}
+							initial={{
+								opacity: 0,
+								y: -30,
+							}}
+							animate={{
+								opacity: 1,
+								y: 0,
+								transition: {
+									y: {
+										duration: index * 0.55,
+									},
+								},
+							}}
+						>
+							<Link key={index} href={social.link}>
+								<ScaleUpHoverAnimation>
 									<Image
 										src={social.icon}
 										alt={social.name}
@@ -60,9 +60,9 @@ export default function Navbar() {
 										height={32}
 										unoptimized
 									/>
-								</motion.div>
-							</ScaleUpHoverAnimation>
-						</Link>
+								</ScaleUpHoverAnimation>
+							</Link>
+						</motion.div>
 					);
 				})}
 			</div>

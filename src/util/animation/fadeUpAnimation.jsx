@@ -26,7 +26,9 @@ export default function FadeUpAnimation(props) {
 					},
 				},
 			}}
-			viewport={{ once: true }}
+			viewport={{
+				once: true,
+			}}
 		>
 			{props.children}
 		</motion.div>

@@ -34,7 +34,7 @@ export default function Hero() {
 			</a>
 
 			{/* Buttons */}
-			<div className="flex justify-center gap-4 mt-12">
+			<div className="flex flex-wrap justify-center gap-4 mt-12">
 				{config.hero.buttons.map((button, index) => {
 					return (
 						<a key={index} href={button.link}>
@@ -43,7 +43,7 @@ export default function Hero() {
 									className={`flex gap-2 px-5 py-2 text-lg rounded-full text-slate-400 ${
 										button.primary
 											? "bg-slate-900"
-											: "border-2 border-slate-700"
+											: "h-11 border border-slate-700"
 									}`}
 								>
 									{button.icon && (

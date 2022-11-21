@@ -42,6 +42,11 @@ const config = {
 				link: "#work",
 				primary: true,
 			},
+			{
+				text: "Skills",
+				icon: "https://img.icons8.com/nolan/2x/hammer.png",
+				link: "#skills",
+			},
 		],
 	},
 	discord_id: "504147739131641857",

@@ -7,8 +7,6 @@ import React from "react";
  */
 export default function BackgroundPattern() {
 	return (
-		<div className="absolute inset-0 h-screen shadow-xl backgroundPattern">
-			<div className="absolute left-0 right-0 blur-3xl bottom-[-0.75rem] h-7" />
-		</div>
+		<div className="absolute inset-0 h-screen shadow-xl backgroundPattern"/>
 	);
 }

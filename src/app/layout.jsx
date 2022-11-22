@@ -1,6 +1,7 @@
 import "react-loading-skeleton/dist/skeleton.css";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import config from "../config";
 import "./globals.css";
 import { AppProvider } from "./provider";
 
@@ -14,9 +15,9 @@ export default function RootLayout({ children }) {
 			<head />
 			<body>
 				<AppProvider>
-					<Navbar />
+					{config.navbar && <Navbar />}
 					{children}
-					<Footer />
+					{config.footer && <Footer />}
 				</AppProvider>
 			</body>
 		</html>

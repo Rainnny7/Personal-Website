@@ -20,29 +20,33 @@ export default function Hero() {
 				{/* Top */}
 				<div className="flex flex-col gap-4 mt-[35vh] sm:mt-[40vh]">
 					{/* Name */}
-					<a className="font-mono text-4xl font-bold sm:text-6xl text-slate-300">
-						{config.hero.header}
-					</a>
+					{config.hero.header && (
+						<a className="font-mono text-4xl font-bold sm:text-6xl text-slate-300">
+							{config.hero.header}
+						</a>
+					)}
 
 					{/* Typewriter */}
-					<a className="flex flex-wrap justify-center text-lg text-center text-slate-400 sm:text-3xl">
-						<span>I am a &#8203;</span>
-						<Typewriter
-							onInit={(typewriter) => {
-								typewriter.pauseFor(2500).deleteAll().start();
-							}}
-							options={{
-								strings: config.hero.text,
-								autoStart: true,
-								loop: true,
-								delay: 110,
-							}}
-						/>
-					</a>
+					{config.hero.text && (
+						<a className="flex flex-wrap justify-center text-lg text-center text-slate-400 sm:text-3xl">
+							<span>I am a &#8203;</span>
+							<Typewriter
+								onInit={(typewriter) => {
+									typewriter.pauseFor(2500).deleteAll().start();
+								}}
+								options={{
+									strings: config.hero.text,
+									autoStart: true,
+									loop: true,
+									delay: 110,
+								}}
+							/>
+						</a>
+					)}
 
 					{/* Buttons */}
 					<div className="flex flex-wrap justify-center gap-4 mt-12">
-						{config.hero.buttons.map((button, index) => {
+						{config.hero.buttons?.map((button, index) => {
 							return (
 								<a key={index} href={button.link}>
 									<ScaleUpHoverAnimation>

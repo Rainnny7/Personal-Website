@@ -20,20 +20,24 @@ export default function Navbar() {
 				className="flex gap-2 text-lg font-bold transition ease-in-out delay-100 text-slate-200 hover:opacity-80"
 				href={"/"}
 			>
-				<Image
-					className="rounded-full"
-					src={config.navbar.logo}
-					alt={config.navbar.title}
-					width={24}
-					height={24}
-					unoptimized
-				/>
-				<span className="hidden sm:flex">{config.navbar.title}</span>
+				{config.navbar.logo && (
+					<Image
+						className="rounded-full"
+						src={config.navbar.logo}
+						alt={config.navbar.title}
+						width={24}
+						height={24}
+						unoptimized
+					/>
+				)}
+				{config.navbar.title && (
+					<span className="hidden sm:flex">{config.navbar.title}</span>
+				)}
 			</Link>
 
 			{/* Socials */}
 			<div className="flex gap-2">
-				{config.socials.map((social, index) => {
+				{config.socials?.map((social, index) => {
 					return (
 						<motion.div
 							key={index}

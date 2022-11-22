@@ -37,22 +37,28 @@ export default function Intro() {
 
 					{/* Name & Bio */}
 					<div className="flex flex-col gap-4 mt-3">
-						<h1 className="text-3xl font-bold text-white">
-							{config.intro.header}
-						</h1>
+						{config.intro.header && (
+							<h1 className="text-3xl font-bold text-white">
+								{config.intro.header}
+							</h1>
+						)}
 						<div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-0 justify-evenly">
-							<p className="max-w-md text-lg text-white/50">
-								{config.intro.bio}
-							</p>
-							<div className="relative w-24 h-24 rounded-full">
-								<Image
-									className="object-cover rounded-full shadow-md opacity-90 shadow-white/70"
-									src={config.intro.image}
-									alt="Picture of the site owner"
-									unoptimized
-									fill
-								/>
-							</div>
+							{config.intro.bio && (
+								<p className="max-w-md text-lg text-white/50">
+									{config.intro.bio}
+								</p>
+							)}
+							{config.intro.image && (
+								<div className="relative w-24 h-24 rounded-full">
+									<Image
+										className="object-cover rounded-full shadow-md opacity-90 shadow-white/70"
+										src={config.intro.image}
+										alt="Picture of the site owner"
+										unoptimized
+										fill
+									/>
+								</div>
+							)}
 						</div>
 					</div>
 				</Card>

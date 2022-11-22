@@ -19,18 +19,22 @@ export default function Work() {
 			<div id="work" className="w-full">
 				{/* Header */}
 				<div className="flex flex-col items-center text-center mb-7">
-					<h1 className="font-mono text-4xl font-bold text-white">
-						{config.work.header}
-					</h1>
-					<h3 className="max-w-md text-xl text-slate-300/60">
-						{config.work.description}
-					</h3>
+					{config.work.header && (
+						<h1 className="font-mono text-4xl font-bold text-white">
+							{config.work.header}
+						</h1>
+					)}
+					{config.work.description && (
+						<h3 className="max-w-md text-xl text-slate-300/60">
+							{config.work.description}
+						</h3>
+					)}
 				</div>
 
 				{/* Work */}
 				<Card className="px-4 pb-8 mx-auto cursor-default">
 					<div className="flex flex-wrap justify-center max-w-2xl gap-3 mt-7">
-						{config.work.jobs.map((job, index) => {
+						{config.work.jobs?.map((job, index) => {
 							return (
 								<a
 									key={index}

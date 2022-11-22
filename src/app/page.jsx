@@ -20,7 +20,7 @@ export default async function Home() {
 						<Intro />
 					</div>
 				</FadeUpAnimation>
-				<div className="flex flex-col w-full max-w-5xl p-10 mx-auto mt-48 gap-72">
+				<div className="flex flex-col w-full max-w-4xl p-10 mx-auto mt-48 gap-72">
 					<Skills />
 					<Work />
 				</div>

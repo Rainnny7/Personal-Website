@@ -4,6 +4,13 @@ const now = moment(Date.now());
 const birthday = moment([2002, 10, 13]);
 const startedWork = moment([2016, 8, 1]);
 
+/**
+ * Configuration for the website.
+ * <p>
+ * Elements can be disabled by completely
+ * removing the section in this file.
+ * </p>
+ */
 const config = {
 	seo: {
 		title: "RainnnyCLUB",

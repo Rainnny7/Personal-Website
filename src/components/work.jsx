@@ -37,7 +37,7 @@ export default function Work() {
 									href={job.link}
 									data-html={true}
 									data-tip={ReactDOMServer.renderToString(
-										<div className="flex gap-6 text-center">
+										<div className="flex flex-col gap-6 text-center md:flex-row">
 											{/* Name & Active Time */}
 											<div className="flex flex-col items-center">
 												<a className="text-lg font-bold">{job.name}</a>
@@ -76,7 +76,7 @@ export default function Work() {
 
 											{/* Description */}
 											<div className="flex items-baseline">
-												<p className="max-w-xs font-thin text-[0.9rem]">
+												<p className="max-w-sm font-thin text-[0.9rem]">
 													{job.description}
 												</p>
 											</div>

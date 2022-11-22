@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import config from "../config";
 import FadeUpAnimation from "../util/animation/fadeUpAnimation";
@@ -24,16 +23,16 @@ export default function Skills() {
 					<div className="flex flex-wrap justify-center max-w-2xl gap-3 mt-7">
 						{config.skills.skills.map((skill, index) => {
 							return (
-								<Link key={index} href={skill.link}>
+								<a key={index} href={skill.link}>
 									<Image
 										src={skill.icon}
-										alt={skill.name}
+										alt={skill.name + " Logo"}
 										data-tip={skill.name}
 										width={54}
 										height={54}
 										unoptimized
 									/>
-								</Link>
+								</a>
 							);
 						})}
 					</div>

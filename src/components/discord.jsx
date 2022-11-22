@@ -19,7 +19,7 @@ export default function Discord() {
 	const [dcdn, setDCDN] = useState();
 	const [loading, setLoading] = useState(true);
 	useEffect(() => {
-		const id = config.discord_id;
+		const id = config.discordId;
 
 		// Lanyard
 		axios.get(`https://api.lanyard.rest/v1/users/${id}`).then((response) => {
@@ -52,7 +52,7 @@ export default function Discord() {
 
 	return (
 		<div className="w-full max-w-[15rem] md:max-w-[20rem]">
-			<Link href={`https://discord.com/users/${config.discord_id}`}>
+			<Link href={`https://discord.com/users/${config.discordId}`}>
 				<Card className="w-full h-full max-h-[19rem] mx-auto pb-3 cursor-pointer">
 					{/* Banner */}
 					{user?.banner ? (

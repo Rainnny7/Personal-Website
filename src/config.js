@@ -44,15 +44,15 @@ const config = {
 		text: ["Java Software Engineer", "System Administrator"],
 		buttons: [
 			{
-				text: "My Work",
-				icon: "https://img.icons8.com/nolan/2x/monitor.png",
-				link: "#work",
-				primary: true,
-			},
-			{
 				text: "Skills",
 				icon: "https://img.icons8.com/nolan/2x/hammer.png",
 				link: "#skills",
+				primary: true,
+			},
+			{
+				text: "My Work",
+				icon: "https://img.icons8.com/nolan/2x/monitor.png",
+				link: "#work",
 			},
 		],
 	},
@@ -79,7 +79,7 @@ const config = {
 	skills: {
 		header: "Skills",
 		description:
-			"Here is a list of the skills I have aquired over my time as a software engineer.",
+			"Here is a list of the skills I have acquired over my time as a software engineer.",
 		skills: [
 			// Languages
 			{

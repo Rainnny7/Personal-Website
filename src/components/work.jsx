@@ -76,7 +76,7 @@ export default function Work() {
 
 											{/* Description */}
 											<div className="flex items-baseline">
-												<p className="max-w-sm font-thin text-[0.9rem]">
+												<p className="max-w-xs font-thin text-[0.9rem]">
 													{job.description}
 												</p>
 											</div>

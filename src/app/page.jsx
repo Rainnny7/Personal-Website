@@ -2,6 +2,7 @@ import Discord from "../components/discord";
 import Hero from "../components/hero";
 import Intro from "../components/intro";
 import Skills from "../components/skills";
+import Work from "../components/work";
 import FadeUpAnimation from "../util/animation/fadeUpAnimation";
 
 /**
@@ -21,7 +22,7 @@ export default async function Home() {
 				</FadeUpAnimation>
 				<div className="flex flex-col w-full max-w-5xl p-10 mx-auto mt-48 gap-72">
 					<Skills />
-					{/* <Work /> */}
+					<Work />
 				</div>
 			</div>
 		</div>

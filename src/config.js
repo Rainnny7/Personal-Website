@@ -17,6 +17,7 @@ const config = {
 		description: "My name is Braydon and I am a self-taught software engineer",
 		url: "https://rainnny.club",
 		image: "/logo.png",
+		theme: "#3971cc",
 	},
 	navbar: {
 		logo: "/logo.png",

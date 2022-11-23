@@ -18,7 +18,7 @@ export default function Hero() {
 		<FadeUpAnimation y={70} animation={1.4}>
 			<div className="flex flex-col items-center justify-between h-screen gap-3 px-6 text-center -mt-14">
 				{/* Top */}
-				<div className="flex flex-col gap-4 mt-[35vh] sm:mt-[40vh]">
+				<div className="flex flex-col gap-4 mt-[35vh] sm:mt-[35vh]">
 					{/* Name */}
 					{config.hero.header && (
 						<a className="font-mono text-4xl font-bold sm:text-6xl text-slate-300">

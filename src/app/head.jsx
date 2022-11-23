@@ -24,9 +24,14 @@ export default function Head() {
 				}}
 				useAppDir={true}
 			/>
-
 			<meta content="width=device-width, initial-scale=1" name="viewport" />
 			<link rel="icon" href="/favicon.ico" />
+			<meta name="theme-color" content={config.seo.theme} />
+
+			{/* Analytics URL */}
+			{process.env.ANALYTICS_URL && (
+				<script defer src={process.env.ANALYTICS_URL} />
+			)}
 		</head>
 	);
 }

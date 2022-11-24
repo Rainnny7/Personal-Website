@@ -3,6 +3,8 @@ version: "3.4"
 services:
   PersonalWebsite:
     image: personalwebsite
+    container_name: PersonalWebsite
+    restart: unless-stopped
     build:
       context: .
       dockerfile: ./Dockerfile

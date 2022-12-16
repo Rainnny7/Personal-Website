@@ -23,7 +23,7 @@
     "react-loading-skeleton": "^3.1.0",
     "react-parallax-tilt": "^1.7.76",
     "react-tooltip": "^4.5.1",
-    "react-use-lanyard": "^0.1.4",
+    "react-use-lanyard": "^0.2.0",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
